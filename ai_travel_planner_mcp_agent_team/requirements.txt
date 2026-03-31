@@ -5,4 +5,5 @@ icalendar
 google-search-results
 googlesearch-python
 duckduckgo-search
+ddgs
 mcp
