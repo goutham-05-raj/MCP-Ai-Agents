@@ -4,7 +4,7 @@ from textwrap import dedent
 from agno.agent import Agent
 from agno.run.agent import RunOutput
 from agno.tools.mcp import MultiMCPTools
-from agno.tools.googlesearch import GoogleSearchTools
+from agno.tools.duckduckgo import DuckDuckGoTools
 from agno.models.openai import OpenAIChat
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta
@@ -117,7 +117,7 @@ async def run_mcp_travel_planner(destination: str, num_days: int, preferences: s
                 "Use all available tools proactively without asking for permission",
                 "Generate the complete, detailed itinerary in one response without follow-up questions"
             ],
-            tools=[mcp_tools, GoogleSearchTools()],
+            tools=[mcp_tools, DuckDuckGoTools()],
             add_datetime_to_context=True,
             markdown=True,
             debug_mode=False,
