@@ -4,4 +4,5 @@ openai
 icalendar
 google-search-results
 googlesearch-python
+duckduckgo-search
 mcp
